@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Logger logger1 = Logger.getInstance();
-        Logger logger2 = Logger.getInstance();
+        DocumentFactory wordFactory = new WordDocumentFactory();
+        Document wordDoc = wordFactory.createDocument();
+        wordDoc.open();
 
-        logger1.log("This is the 1st log message.");
-        logger2.log("This is the 2nd log message.");
+        DocumentFactory pdfFactory = new PdfDocumentFactory();
+        Document pdfDoc = pdfFactory.createDocument();
+        pdfDoc.open();
 
-        if (logger1 == logger2) {
-            System.out.println("logger1 and logger2 are the same instance.");
-        } else {
-            System.out.println("Different instances (Singleton failed).");
-        }
+        DocumentFactory excelFactory = new ExcelDocumentFactory();
+        Document excelDoc = excelFactory.createDocument();
+        excelDoc.open();
     }
 }
