@@ -29,7 +29,7 @@ public class Search{
         return null;
     }
 
-    // Sort array by productId
+
     public static void sortById(Product[] products) {
         Arrays.sort(products, Comparator.comparingInt(p -> p.productId));
     }
