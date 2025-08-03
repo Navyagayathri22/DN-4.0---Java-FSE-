@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.col {
+  flex: 1;
+  text-align: left;
+  padding: 0 40px;
+  border-right: 4px solid green;
+}
+
+.col:last-child {
+  border-right: none;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
